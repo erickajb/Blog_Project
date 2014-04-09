@@ -19,7 +19,7 @@
 		<?php foreach($entries as $entry) : ?>
 			<h2><?=anchor(base_url().'blog/view/'.$entry->id,$entry->title)?></h2>
 			Author: <?=$entry->author?><br />
-			Date: <?=convertDateTimetoTimeAgo($entry->date)?><hr/>
+			Date: <?=$entry->date?><hr/>
 		<?php endforeach; ?>
 	<?php else : ?>
 		<h1>No entries</h1>

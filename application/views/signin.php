@@ -5,8 +5,7 @@
 	<title>Blog</title>	
 </head>
 <body>
-	<?php include('menu.php');?>
-	
+	<?php include('menu.php');?>	
 	<?=form_open(base_url().'users/validate/')?>
 	<?php echo (isset($error)) ? '<p>Incorrect Data!</p>' : '';?>
 	<p>Username: <?=form_input('username')?></p>	

@@ -18,13 +18,13 @@ class Blog extends CI_Controller {
 
 	public function insert_entry(){
 		login_site();
+		date_default_timezone_set("America/Costa_Rica");	// Configuramos la zona horaria para que nos de la fecha exacta
 		$entry = array(
 			'permalink'  => permalink($this->input->post('title')),
 			'author' => $this->session->userdata('username'),
 			'title' => $this->input->post('title'),
 			'content' => $this->input->post('content'),
-			'date' => date('Y-m-d H:i:s'),
-			'tags' => $this->input->post('tags')
+			'date' => date('Y-m-d h:i:s')
 			);		
 		$this->blog_model->insert('entries', $entry);
 
@@ -39,12 +39,13 @@ class Blog extends CI_Controller {
 	}
 
 	public function comment(){
+		date_default_timezone_set("America/Costa_Rica");
 		$id_blog = $this->input->post('id_blog');
 		$comment = array(
 			'id_blog' => $id_blog,
 			'author' => $this->input->post('author'),
 			'comment' => $this->input->post('comment'),
-			'date' => date('Y-m-d H:i:s')
+			'date' => date('Y-m-d h:i:s')
 			);
 
 		$this->blog_model->insert('comments', $comment);
