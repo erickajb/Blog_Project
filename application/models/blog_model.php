@@ -11,22 +11,9 @@ class Blog_model extends CI_Model {
 		return $this->db->insert($table, $data);
 	}
 
-	public function validate_data($username, $password){
-		$this->db->where('username', $username);
-		$this->db->where('password', $password);
-
-		return $this->db->get('users')->row();
-	}
-
 	public function getEntry($id){
 		$this->db->where('id', $id);
 
 		return $this->db->get('entries')->row();
-	}
-
-	public function getComments($id){
-		$this->db->where('id_blog', $id);
-
-		return $this->db->get('comments')->result();
 	}
 }

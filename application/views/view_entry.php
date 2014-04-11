@@ -14,7 +14,7 @@
 	Date: <?=$entry->date?><br />
 	
 
-		<?=form_open(base_url().'blog/comment/')?>
+		<?=form_open(base_url().'comment/insertComment/')?>
 		<p>Author:<?=form_input('author')?></p>
 		Your comment: 		
 		<?=form_hidden('id_blog', $this->uri->segment(3))?>

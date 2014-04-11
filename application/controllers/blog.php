@@ -4,7 +4,8 @@ class Blog extends CI_Controller {
 
 	public function __construct(){
 		parent::__construct();
-		$this->load->model('blog_model');		
+		$this->load->model('blog_model');
+		$this->load->model('comment_model');		
 	}
 	
 	public function index(){
@@ -34,22 +35,8 @@ class Blog extends CI_Controller {
 	public function view(){
 		$entry_id = $this->uri->segment(3);
 		$data['entry'] = $this->blog_model->getEntry($entry_id);
-		$data['comments'] = $this->blog_model->getComments($entry_id);
+		$data['comments'] = $this->comment_model->getComments($entry_id);
 		$this->load->view('view_entry', $data);
 	}
 
-	public function comment(){
-		date_default_timezone_set("America/Costa_Rica");
-		$id_blog = $this->input->post('id_blog');
-		$comment = array(
-			'id_blog' => $id_blog,
-			'author' => $this->input->post('author'),
-			'comment' => $this->input->post('comment'),
-			'date' => date('Y-m-d h:i:s')
-			);
-
-		$this->blog_model->insert('comments', $comment);
-
-		redirect(base_url().'blog/view/'.$id_blog);
-	}
 }
