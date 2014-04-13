@@ -7,4 +7,9 @@ class Comment_model extends CI_Model {
 
 		return $this->db->get('comments')->result();
 	}
+	public function getAll()
+	{	
+		$query = $this->db->get('comments');
+		return $query->result_array();		
+	}
 }
