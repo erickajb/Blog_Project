@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<link rel="stylesheet" type="text/css" href="style/index.css">
+	<link rel="stylesheet" type="text/css" href="assets/index.css">
 	<meta charset="utf-8">
 	<title>Blog</title>	
 </head>
@@ -14,11 +14,11 @@
 		if(!empty($comments)){
 			echo '<h2>Comment disable</h2>';
 			foreach ($comments as $key => $comment)        
-				if($comment['status'] == 'false'){			
-					echo '<h2> Author: '.$comment['author'].'</h2>'.
+				if($comment['status'] == 'false'){
+					echo '<h2> CODIGO: '.$comment['permalink'].'</h2>'.'<br />'.			
+					' Author: '.$comment['author'].
 					$comment['comment'].'<br />'.
-					'<br />'.$comment['date'] .'<hr />';
-				}	
+					'<br />'.$comment['date'] . '<hr/>';}	
 				if($comment['status'] == 'true'){			
 					
 				}								

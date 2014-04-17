@@ -202,7 +202,7 @@ $config['log_path'] = '';
 | codes to set your own date formatting
 |
 */
-$config['log_date_format'] = 'h:i:s Y-m-d';
+$config['log_date_format'] = 'Y-m-d h:i:s';
 
 /*
 |--------------------------------------------------------------------------

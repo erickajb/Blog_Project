@@ -32,8 +32,7 @@
 					$comment->comment.'<br />'.
 					$comment->date.'<hr />';
 				}
-				else
-			echo '<h3>No Comments found!</h3>';
+				
 
 		}
 		else

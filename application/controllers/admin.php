@@ -25,7 +25,7 @@ class Admin extends CI_Controller {
 			'author' => $this->session->userdata('username'),
 			'title' => $this->input->post('title'),
 			'content' => $this->input->post('content'),
-			'date' => date('h:i:s Y-m-d')
+			'date' => date('Y-m-d h:i:s')
 			);		
 		$this->blog_model->insert('entries', $entry);
 
