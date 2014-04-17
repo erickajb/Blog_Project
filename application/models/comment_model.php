@@ -7,4 +7,19 @@ class Comment_model extends CI_Model {
 
 		return $this->db->get('comments')->result();
 	}
+	public function getAll()
+	{	
+		$query = $this->db->get('comments');
+		return $query->result_array();		
+	}
+	public function getlink()
+	{
+		$this->db->select('*');
+		$this->db->from('entries');
+		$this->db->join('comments', 'comments.id_blog = entries.id','left');
+		$query = $this->db->get();
+		return $query->result_array(); 
+	}
+	
 }
+
