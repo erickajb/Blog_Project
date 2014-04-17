@@ -27,19 +27,12 @@
 		if(!empty($comments)){
 			echo '<h3>Comments</h3>';
 			foreach($comments as $comment)
-				if($comment->status=='true'){
-					echo '<h4>'.$comment->author.'</h4>'.
-					$comment->comment.'<br />'.
-					$comment->date.'<hr />';
-				}
-				else
-			echo '<h3>No Comments found!</h3>';
-
+				echo '<h4>'.$comment->author.'</h4>'.
+				$comment->comment.'<br />'.
+				$comment->date.'<hr />';
 		}
 		else
 			echo '<h3>No Comments found!</h3>';
 	?>
-
-
 </body>
 </html>
