@@ -6,7 +6,7 @@
 	
 	<title>Blog</title>	
 </head>
-<body>
+<body class>
 
 	<?php include('menu.php');?>
 

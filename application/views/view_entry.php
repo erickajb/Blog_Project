@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<link rel="stylesheet" type="text/css" href="assets/index.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/index.css" />
 	<meta charset="utf-8">
 	<title>Blog</title>		
 </head>
-<body>
+<body class="view_entry">
 	<?php include('menu.php');?>
-	
+
 	<h2><?=$entry->title?></h2>
 	<p><?=$entry->content?></p>
 	Author: <?=$entry->author?><br />
 	Date: <?=$entry->date?><br />
-	
-
+	<div>
 		<?=form_open(base_url().'comment/insertComment/')?>
 		<p>Author:<?=form_input('author')?></p>
 		Your comment: 		
@@ -21,9 +20,7 @@
 		<?=form_textarea('comment')?>
 		<?=form_submit('submit','Send')?>
 		<?=form_close()?>
-	
-
-	<?php
+		<?php
 		if(!empty($comments)){
 			echo '<h3>Comments</h3>';
 			foreach($comments as $comment)
@@ -38,6 +35,10 @@
 		else
 			echo '<h3>No Comments found!</h3>';
 	?>
+	</div>
+		
+
+	
 
 
 </body>

@@ -10,7 +10,7 @@
 		echo ' | ';
 		echo anchor(base_url().'comment/false_status/', 'Comments disabled');
 		echo ' | ';
-		echo anchor(base_url().'comment/false_status/', 'Maintenance of comments');
+		echo anchor(base_url().'maintenance/', 'Maintenance of comments');
 	}
 	else{
 		echo anchor(base_url().'users/signin/','Admin').' | ';	

@@ -18,7 +18,8 @@ form {
     border:3px solid #A2E8E8; 
     text-align: center;
     font-family: "Chalet", Helvetica, Verdana;
-    font-size: 1.5em;
+    font-size: 1.5 em;
+    margin-top: 8%;
 } 
 span input{
     width:50%;
@@ -31,8 +32,11 @@ span input{
     padding: -10%;
     margin-left: 25%;
 }
-.admin{
+.admin{    
     background: #14C9C0;
+    font-family: "Comic Sans MS";
+    color: #104141;
+    font-size:1.1em;
 
 }
 
@@ -45,12 +49,20 @@ span input{
     background: -ms-radial-gradient(center, ellipse cover,  rgba(247,251,252,1) 0%,rgba(217,237,242,1) 40%,rgba(173,217,228,1) 100%); /* IE10+ */
     background: radial-gradient(ellipse at center,  rgba(247,251,252,1) 0%,rgba(217,237,242,1) 40%,rgba(173,217,228,1) 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7fbfc', endColorstr='#add9e4',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-}
+    background: #14C9C0;
+    font-family: "Comic Sans MS";
+    color: #104141;
+    font-size:1.1em;
+    width: 70%;
+    height: 50%;
+    margin-top: 1.5%;
+
+}   
 
 .submit {      
     margin-top:20px;    
     color: #14C9C0;
-    margin-left: 17%;
+    margin-left: 11%;
    
    
 }
@@ -68,8 +80,7 @@ span input{
 .imgAdmin{
     width: 40%;
     height: 20%;
-    margin-right: 30%;
-
+    margin-right: 55%;
 
 }
 
@@ -85,10 +96,24 @@ span input{
     border:3px solid #A2E8E8; 
     border-color: #D6D6D6;
     float: right; 
-    width: 18%;
+    width: 30%;
     height: 580px; 
-    margin-top: 0%;
-    margin-right: 1%;
+    margin-top: -33%;
+    margin-right: -37%;
     color:#35DBD2;
 }
+.new_entry{
+    background: #14C9C0;
+    font-family: "Comic Sans MS";
+    color: #104141;
+    font-size:1.1em;
+ }
+ .view_entry{
+    background: #14C9C0;
+    font-family: "Comic Sans MS";
+    color: #104141;
+    font-size:1.1em;
+
+ }
+
 
