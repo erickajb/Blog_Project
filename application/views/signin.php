@@ -6,12 +6,16 @@
 	<title>Blog</title>	
 </head>
 <body  class="admin">
-	<?php include('menu.php');?>	
-	<?=form_open(base_url().'users/validateUser/')?>
-	<?php echo (isset($error)) ? '<p>Incorrect Data!</p>' : '';?>
-	<p>Username: <?=form_input('username')?></p>	
-	<p>Password: <?=form_password('password')?></p>
-	<div class="submit"><?=form_submit('submit', 'LOG IN')?></div>
-	<img class="imgAdmin" src="<?php echo base_url(); ?>assets/admin.png" alt="">
+	<?php include('menu.php');?>
+
+	<div class="signin">
+		<?=form_open(base_url().'users/validateUser/')?>
+		<?php echo (isset($error)) ? '<p>Incorrect Data!</p>' : '';?>
+		<p>Username: <?=form_input('username')?></p>	
+		<p>Password: <?=form_password('password')?></p>
+		<div class="login"><?=form_submit('submit', 'LOG IN')?></div>
+		<img class="imgAdmin" src="<?php echo base_url(); ?>assets/admin.png" alt="">
+	</div>
+	
 </body>
 </html>

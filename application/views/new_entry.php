@@ -7,10 +7,12 @@
 </head>
 <body class="new_entry">
 	<?php include('menu.php');?>
-
-	<?=form_open(base_url().'blog/insert_entry/')?>
-	<p>Title: <?=form_input('title')?></p>
-	<p>Content: <?=form_textarea('content')?></p>
-	<?=form_submit('submit', 'Insert')?>
+	<div class="frmPost">
+		<?=form_open(base_url().'blog/insert_entry/')?>
+		<p>Title: </p><?=form_input('title')?>
+		<p>Content:</p><?=form_textarea('content')?>
+		<?=form_submit('submit', 'Insert')?>
+	</div>
+	
 </body>
 </html>

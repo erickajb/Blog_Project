@@ -2,13 +2,16 @@
 
 class Comment_model extends CI_Model {
 
-	public function getComments($id){
+	public function getComments($id)
+	{
+
 		$this->db->where('id_blog', $id);
 
 		return $this->db->get('comments')->result();
 	}
 	public function getAll()
 	{	
+		$this->db->order_by('date', "desc");
 		$query = $this->db->get('comments');
 		return $query->result_array();		
 	}

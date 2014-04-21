@@ -19,10 +19,10 @@
 		<h1>No entries</h1>
 	<?php endif; ?>		
 </body>
-<div id="sidebar">
+<div class="sidebar">
 		<div>
 			<h1> My Biography</h1>
-			<img class ="imagen" src="assets/IMG.jpg" alt="">
+			<img class ="imagen" src="assets/IMG.jpg">
 		</div>
 </div>
 

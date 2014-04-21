@@ -4,7 +4,7 @@
 	if ($this->session->userdata('is_logged_in')){
 
 		echo 'Hello, '.$this->session->userdata('name').' ('. anchor(base_url()."users/logout/","logout") .') | ';
-		echo anchor(base_url(), 'All Entries');	
+		echo anchor(base_url(), 'Blog');	
 		echo ' | ';
 		echo anchor(base_url().'blog/entry/', 'New Entry');
 		echo ' | ';

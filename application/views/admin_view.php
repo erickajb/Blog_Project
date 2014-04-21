@@ -6,26 +6,27 @@
 	
 	<title>Blog</title>	
 </head>
-<body class>
+<body class="admin">
 
 	<?php include('menu.php');?>
-
-	<?=form_open(base_url().'comment/false_status/')?>
-
-	<?php
-		if(!empty($comments)){
-			echo '<h2>All Comments disabled</h2>';
-			foreach ($comments as $key => $comment)        
-				if($comment['status'] == 'false'){
-					echo '<h2> Post: '.$comment['permalink'].'</h2>'.			
-					'<h4>Author: '.$comment['author'].'</h4>' .'<br />'.
-					' Comment: '.$comment['comment'].'<br />'.
-					'<br />'.$comment['date'] . '<hr/>';}	
-				if($comment['status'] == 'true'){			
-					
-				}								
-		}
-		else
-			echo '<h2>No Comments disabled!</h2>';	
-	?>
+	<h2 class="h2">All Comments disabled</h2>
+	<div class="desabledComment">	
+		<?=form_open(base_url().'comment/false_status/')?>
+	
+			<?php
+				if(!empty($comments)){			
+					foreach ($comments as $key => $comment)        
+						if($comment['status'] == 'false'){
+							echo '<h2> Post: '.'<br />'.$comment['permalink'].'</h2>'.			
+							'<h4>Author: '.'<br />'.$comment['author'].'</h4>' .
+							' Comment: '.'<br />'.$comment['comment'].'<br />'.
+							'<br />'.$comment['date'] . '<hr/>';
+						}								
+				}
+				else{
+				echo '<h2>No Comments disabled!</h2>';	
+			}				
+		?>	
+	</div>
+	
 </body>
