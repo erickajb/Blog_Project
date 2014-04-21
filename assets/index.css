@@ -99,7 +99,7 @@ form{
     float: right; 
     width: 30%;
     height: 580px; 
-    margin-top:-54%;
+    margin-top:-40%;
     margin-right: -37%;
     color:#35DBD2;
 }
@@ -177,9 +177,22 @@ form{
 .login{
     margin-right: -5%;  
     margin-top: 5%; 
-
-
 }
- 
+table{
+    padding:1%;
+    margin-left:5%;
+    border-spacing: 0px;
+    width: 90%;
+    border: 3px solid #000;  
+    margin-top: 2%;  
+ }
+ td strong{
+    font-size: 1.5em;   
+ }
+ td{
+    border: 2px solid #000;
+    text-align: center;
+    
+ }
 
 

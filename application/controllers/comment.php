@@ -11,7 +11,11 @@ class Comment extends CI_Controller {
 	
 	public function insertComment(){
 		date_default_timezone_set("America/Costa_Rica");
+
+		$this->load->library('email','','correo');//Libreria para enviar correos
+
 		$id_blog = $this->input->post('id_blog');
+
 		$comment = array(
 			'id_blog' => $id_blog,
 			'author' => $this->input->post('author'),
@@ -19,6 +23,20 @@ class Comment extends CI_Controller {
 			'date' => date('Y-m-d h:i:s'),
 			'status'=> ('false')
 			);
+
+
+		$this->correo->from('erickajb88@gmail.com', 'Ericka Jimenez');// Para enviar correos
+  		$this->correo->to('erickajb88@gmail.com');
+ 		$this->correo->subject('Notice comment on blog');
+  		$this->correo->message($comment['author'].' a comentado tu blog su comentario fue: '.$comment['comment']);
+		if($this->correo->send())
+  			{
+   				echo 'Correo enviado';
+  			}
+  		else
+  			{
+   				show_error($this->correo->print_debugger());
+  			}
 
 		$this->blog_model->insert('comments', $comment);
 		redirect(base_url().'blog/view/'.$id_blog);
