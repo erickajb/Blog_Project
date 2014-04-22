@@ -3,7 +3,14 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/index.css" />
 	<meta charset="utf-8">
-	<title>Blog</title>		
+	<title>Blog</title>	
+	<div class="sidebar2">
+		<div>
+			<h1 class="biography"> My Biography</h1>
+			<img class ="imagen" src="assets/IMG.jpg">
+			
+		</div>
+	</div>	
 </head>
 <body class="view_entry">
 	<?php include('menu.php');?>
@@ -25,12 +32,7 @@
 		else
 			echo '<h3>No Comments found!</h3>';
 	?>
-	<div class="sidebar2">
-		<div>
-			<h1> My Biography</h1>
-			<img class ="imagen" src="assets/IMG.jpg">
-		</div>
-	</div>
+	
 	<div class="frmComment">
 		<?=form_open(base_url().'comment/insertComment/')?>
 		<p>Author:</p><?=form_input('author')?>

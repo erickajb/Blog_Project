@@ -24,7 +24,7 @@
         }
     ?>
 	<section >
-        <form class="frmEditar" action="<?php echo base_url(); ?>index.php/maintenance/<?php echo $accion; ?>" method="post">
+        <form class="frmEditar" action="<?php echo base_url(); ?>index.php/maintComment/<?php echo $accion; ?>" method="post">
             <?php  
             echo $id;        
             if( $this->uri->segment(3) != '' ){             
@@ -64,12 +64,12 @@
                         <td><?php echo $comentario->comment; ?></td>
                         <td><?php echo $comentario->date; ?></td>
                         <td><?php echo $comentario->status; ?></td>
-                        <td><a href="<?php echo base_url(); ?>index.php/maintenance/index/<?php echo $comentario->id; ?>">Edit Comment<a/></p></td>
-                        <td><a href="<?php echo base_url(); ?>index.php/maintenance/eliminar/<?php echo $comentario->id; ?>">Delete Comment<a/></p></td>
+                        <td><a href="<?php echo base_url(); ?>index.php/maintComment/index/<?php echo $comentario->id; ?>">Edit Comment<a/></p></td>
+                        <td><a href="<?php echo base_url(); ?>index.php/maintComment/eliminar/<?php echo $comentario->id; ?>">Delete Comment<a/></p></td>
                     </tr>
                 <?php endforeach;?>
              <?php else :?>
-                <h2>No hay registros</h2>
+                <h2>No Entries!!!</h2>
              <?php endif; ?>     
     </section>
 </body>    

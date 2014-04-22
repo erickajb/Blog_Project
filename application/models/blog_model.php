@@ -16,4 +16,8 @@ class Blog_model extends CI_Model {
 
 		return $this->db->get('entries')->row();
 	}
+	public function getBiografy(){
+		
+		return $this->db->get('blogger')->result();
+	}
 }

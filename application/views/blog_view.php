@@ -4,6 +4,13 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/index.css" />
 	<title>Blog</title>	
+	<div >
+		<div class="sidebar">
+			<h1 class="biography"> My Biography</h1>
+			<img class ="imagen" src="assets/IMG.jpg">
+			
+		</div>
+	</div>
 </head>
 <body class="blog">
 	
@@ -19,11 +26,4 @@
 		<h1>No entries</h1>
 	<?php endif; ?>		
 </body>
-<div class="sidebar">
-		<div>
-			<h1> My Biography</h1>
-			<img class ="imagen" src="assets/IMG.jpg">
-		</div>
-</div>
-
 </html>

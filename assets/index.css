@@ -18,16 +18,15 @@ form{
     font-family: "Chalet", Helvetica, Verdana;
     font-size: 1.5 em;
     margin-top: 10%;
-} 
+}
 
 .admin{    
     background: #14C9C0;
     font-family: "Comic Sans MS";
     color: #104141;
-    font-size:1.1em;
+    font-size:1em;
     margin-left: 2%;
     margin-top: 2%;
-
 }
 
 .blog{
@@ -42,20 +41,22 @@ form{
     background: #14C9C0;
     font-family: "Comic Sans MS";
     color: #104141;
-    font-size:1.1em;
+    font-size:1em;
     width: 70%;
     height: 50%;
     margin-top: 1.5%;
     margin-left: 2%;
-}  
+}
+
 .h2{
     font-size: 2em;
     text-align: center;
     color: #0C1021;
 }
+
 .imagen{
     width: 70%;
-    height: 60%;
+    height: 45%;
     border:5px solid #35DBD2;
     margin-left: 14%;
 }
@@ -64,7 +65,6 @@ form{
     width: 40%;
     height: 20%;
     margin-right: 55%;
-
 }
 
 .sidebar{
@@ -81,10 +81,12 @@ form{
     float: right; 
     width: 30%;
     height: 580px; 
-    margin-top: -33%;
+    margin-top: 2%;
     margin-right: -37%;
     color:#35DBD2;
+   
 }
+
 .sidebar2{
     background: rgb(181,189,200); /* Old browsers */
     background: -moz-radial-gradient(center, ellipse cover,  rgba(181,189,200,1) 0%, rgba(130,140,149,1) 36%, rgba(40,52,59,1) 100%); /* FF3.6+ */
@@ -99,45 +101,50 @@ form{
     float: right; 
     width: 30%;
     height: 580px; 
-    margin-top:-40%;
+    margin-top:2%;
     margin-right: -37%;
-    color:#35DBD2;
+    color:#35DBD2; 
+    
 }
+
 .signin{
     width: 40%;
     height: 40%;
     margin-left: 30%;
     margin-top: 10%;    
 }
+
 .new_entry{
     background: #14C9C0;
     font-family: "Comic Sans MS";
     color: #104141;
-    font-size:1.1em;
+    font-size:1em;
     width: 90%;
     height: 90%;
     margin-top: 2%;
     margin-left: 3%;
 
  }
- .view_entry{
+
+.view_entry{
     background: #14C9C0;
     font-family: "Comic Sans MS";
     color: #104141;
-    font-size:1.1em;
+    font-size:1em;
     margin-left: 3%;
     width: 70%;
     height: 50%;
     margin-top: 1.5%;
-
  }
- .frmComment{
+
+.frmComment{
     margin-left:-5%;
     width: 50%;
     height: 20%;
     margin-top: -3%;
  }
- .frmPost{
+
+.frmPost{
     width: 40%;
     height: 40%;
     margin-left: 30%;
@@ -145,39 +152,47 @@ form{
     font-size: 1.5 em;
     margin-top: 10%;
  }
- .desabledComment{
-    margin-top: -7%;
 
+.desabledComment{
+    margin-top: -7%;
  }
- .author{
+
+.author{
     margin-right: 78%; 
     margin-top: 3.5%;     
  }
- .comment{
+
+.comment{
     margin-right: 32%; 
     margin-top: -3.7%; 
 }
- .date{
-    margin-right: -13%; 
+
+.date{
+    margin-right: -15%; 
     margin-top: -3.7%; 
 }
- .status{
+
+.status{
     margin-right: -52%; 
     margin-top: -3.7%; 
 }
+
 .submit{      
     margin-right: -86%;  
     margin-top: -2.1%;  
 }
+
 .frmEditar{
     width: 90% ;
     height:20%;
     margin-top: 3.5%;
 }
+
 .login{
     margin-right: -5%;  
     margin-top: 5%; 
 }
+
 table{
     padding:1%;
     margin-left:5%;
@@ -186,13 +201,30 @@ table{
     border: 3px solid #000;  
     margin-top: 2%;  
  }
- td strong{
+
+td strong{
     font-size: 1.5em;   
  }
- td{
+td{
     border: 2px solid #000;
-    text-align: center;
-    
+    text-align: center;    
  }
+
+.title{
+    margin-right: 38%; 
+    margin-top: -3.7%; 
+}
+.content{
+    margin-right: -8%; 
+    margin-top: -3.7%; 
+}
+.date1{
+    margin-right: -55%; 
+    margin-top: -3.7%; 
+}
+.biography{
+    text-align: center;
+}
+
 
 

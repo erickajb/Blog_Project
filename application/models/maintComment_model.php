@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class maintenance_model extends CI_Model{
+class MaintComment_model extends CI_Model{
 
 	
 	public function actualiza_comment($id, $comentario){
